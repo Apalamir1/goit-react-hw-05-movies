@@ -84,3 +84,7 @@ export const Licence = styled.a`
 export const TMDB = styled(logoTMDB)`
   margin-left: 10px;
 `;
+
+export const LinkContainer = styled.ul`
+  margin-left: 20px;
+`;

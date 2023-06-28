@@ -10,6 +10,7 @@ import {
   LogoLink,
   Licence,
   TMDB,
+  LinkContainer,
 } from './Layout.styled';
 export const Layout = () => {
   return (
@@ -29,14 +30,14 @@ export const Layout = () => {
         <Outlet />
       </Suspense>
       <Footer>
-        <ul>
+        <LinkContainer>
           <li>
             <StyledLink to="/">Home</StyledLink>
           </li>
           <li>
             <StyledLink to="/movies">Movies</StyledLink>
           </li>
-        </ul>
+        </LinkContainer>
         <div>
           <Licence
             href="https://www.themoviedb.org"

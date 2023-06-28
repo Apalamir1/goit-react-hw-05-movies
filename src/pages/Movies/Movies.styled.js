@@ -1,11 +1,13 @@
 import styled from '@emotion/styled';
 import { FcSearch } from 'react-icons/fc';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 90%;
   margin: 0 auto;
   heigth: 100%;
   min-height: none;
+  margin-bottom: 20px;
 `;
 export const MovieSearchForm = styled.form`
   display: flex;
@@ -74,9 +76,29 @@ export const MovieItem = styled.li`
   }
 
   ::before {
-    content: '🎬';
     display: flex;
     align-items: center;
     margin-right: 5px;
   }
+`;
+export const Decorate = styled.div`
+  background-color: #fff;
+  heigth: 500px;
+  margin-top: 800px;
+`;
+export const Image = styled.img`
+  padding: 16px 32px;
+  width: 100px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin: 0, auto;
+  margin-bottom: 20px;
+`;
+export const MovieLink = styled(Link)`
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 16px 32px;
+  text-decoration: none;
+  color: #000;
 `;
